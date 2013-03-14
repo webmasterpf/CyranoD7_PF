@@ -1,0 +1,216 @@
+/**
+Template page d'accueil custom
+ */
+/*Bandeau haut de page*/
+#bandeau-pagetop{width: 100%;background: #FBFBFB;padding: 5px 0;}
+ 
+ #header-inner{
+	margin:auto;
+	height:auto;
+	width:980px;
+	background:none;
+	
+
+}
+/*Partie gauche du header*/
+#headHaut{
+	width:980px;
+	height:55px;
+	float:none;
+	display:block;
+	margin:0;
+	
+}
+#logoHead{
+	height:55px !important;
+	width:335px;
+	float:left;
+	display:block;
+	margin:0;
+}
+#logoHead img{
+	height:55px !important;
+	width:335px;
+	padding:0;
+	margin:0;
+}
+/*Menu pictos header*/
+#menuImg{
+	height:30px;
+	width:auto;
+	float:right;
+	background:transparent;
+	padding:30px 0 0;
+
+}
+#navPicto{
+border:0;
+height:25px;
+width:430px;
+
+}
+
+#navPicto td{
+border:0;
+height:25px;
+width:auto;
+display:block;
+float:left;
+padding:5px;
+}
+
+#navPicto a {
+	border:0;
+	}
+#navPicto a :hover{}
+/************PARTIE BASSE**************/
+#headBas{
+	width:980px;
+	height:130px;/*hauteur du bloc : superfish = 130px nice menu=115px*/
+	float:none;
+	display:block;
+	margin:5px 0 0 0;
+	background:#CFD0D2 url(../images/bg_menu_rp.gif) repeat-x top left;
+	
+}
+/*Menu principal haut du header*/
+#menuHead{
+	float:none;
+	height:auto;
+	padding:0;
+	width:980px;
+	
+	
+	
+}
+#headSearch{
+text-align:right;
+margin: 2px 0 0 0;
+background: url(../images/bg_recherche.gif) no-repeat left 5px;
+height: 25px;
+display: block;
+float: right;
+}
+#search{
+  width: 225px;
+  height: 25px;
+  display: block;
+  padding:0 3px 0 0;
+
+}
+#name-and-slogan{
+	height:20px;
+	width:980px;
+	vertical-align:bottom;
+	float:right;
+}
+#site-name a{
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+}
+
+#site-name{
+padding:160px 0 0 10px;
+margin:0;
+}
+#site-slogan{
+color:white;
+display:block;
+float:left;
+height:20px;
+padding:3px 0 0 40px;
+width:400px;
+}
+
+#site-slogan a{
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+}
+
+
+/*FIN CSS HEADER*/
+/*****************/
+#mainPage{
+	margin:auto;
+	width:980px;
+	clear:none;
+	
+}
+
+#contentHome{
+	width:54%;
+        float:left;
+	background:none;
+	color:black;
+}
+/*#contentHome a{
+color:black;
+text-decoration:none;
+}
+#contentHome a:hover{
+text-decoration:underline;
+}*/
+#content-areaHaut{
+height: auto;
+width: 530px;
+margin:0;
+padding:0;
+}
+#annonceImg{
+width: auto;
+height: auto;
+padding:10px 0 0;
+}
+#annonceImg map{
+height: 1px;
+}
+
+#annonceTb{
+width:506px;
+margin: 0 auto;
+padding:0;
+
+}
+
+#blocLycee{
+width:506px;
+margin: 0 auto;
+padding:20px 0 10px;}
+
+#contentAnim{
+    /*
+    width:46% !important;
+        width: 43%;
+    */
+	width: 440px;
+	float:left;
+	background:none;
+}
+
+#textAnim{
+background: none;
+color: black;
+padding: 0px;
+text-align:right;
+float: left;
+}
+/*Table pour lycees sur accueil*/
+tbody{
+margin:0;
+padding:0;
+border:0;
+}
+#table_acces_lycee{
+width:506px;
+margin: 0 auto;
+padding:0;
+}
+/*--------------------------------*/
+/*Zone admin pour page d'accueil*/
+#content-admin-homepage{
+    margin: 0 auto;
+    padding: 0;
+    width: 990px;
+}

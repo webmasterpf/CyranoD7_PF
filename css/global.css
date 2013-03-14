@@ -1,0 +1,1399 @@
+/*------------------------------------------------------*
+*-- CSS Drupal--------------*
+*------------------------------------------------------*/
+
+/*------------------------------------------------*
+ *---  Provence Formation Janv. 2010 --*
+ *------------------------------------------------*/
+
+/*-------------------------------------------------
+*********  COULEURS *****************
+gris anthracite #606070
+vert #ADC91F
+violet #911381
+orange #F29400
+bleu turquoise #01ABCF
+rouge #E3001C
+rose fushia #E3001C
+jaune #FAEB0C
+*/
+
+/**********STYLE POUR LES BLOCS*******************/
+
+/**----HEADER---***/
+#bandeau-pagetop table{width: 970px;margin: 3px auto;}
+#bandeau-pagetop tbody{}
+#bandeau-pagetop tr{}
+#bandeau-pagetop td{color: #606171;text-align: center;}
+#bandeau-pagetop td a{color: #606171;text-decoration: none;padding: 2px;}
+#bandeau-pagetop td a:hover{color: #FBFBFB;}
+
+#bandeau-pagetop a.site_er{color: #E2001A;}
+#bandeau-pagetop a:hover.site_er{background: #E2001A;}
+
+#bandeau-pagetop a.site_cg{color: #F29400;}
+#bandeau-pagetop a:hover.site_cg{background: #F29400;}
+
+#bandeau-pagetop a.site_mg{color: #E10279;}
+#bandeau-pagetop a:hover.site_mg{background: #E10279;}
+
+#bandeau-pagetop a.site_bl{color: #00AAD2;}
+#bandeau-pagetop a:hover.site_bl{background: #00AAD2;}
+
+#bandeau-pagetop a.site_lr{color: #970F7D;}
+#bandeau-pagetop a:hover.site_lr{background: #970F7D;}
+
+#bandeau-pagetop a.site_ca{color: #9B9C9E;}
+#bandeau-pagetop a:hover.site_ca{background: #9B9C9E;}
+
+#bandeau-pagetop a.site_ce{color: #C8D215;}
+#bandeau-pagetop a:hover.site_ce{background:#C8D215;}
+/*¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+== STYLE SPAN LYCEE CONTENU (reprise code visuel lycée) ==
+*/
+span.celony{color: black;background: #c8d215;padding: 0pt 2px;}
+span.caucadis{color: black;background: #9c9e9f;padding: 0pt 2px;}
+span.brise-lames{color: black;background: #00ACD1;padding: 0pt 2px;}
+span.le-rocher{color: black;background: #970F7D;padding: 0pt 2px;}
+span.gasquet{color: black;background: #E2017B;padding: 0pt 2px;}
+span.grawitz{color: black;background: #F09500;padding: 0pt 2px;}
+span.rostand{color: black;background: #E3001C;padding: 0pt 2px;}
+span.pf{color: black;background: #E85231;padding: 0pt 2px;}
+/**----MIDDLE---***/
+a#retour_haut{
+    display: none;
+    color: #AEC721;
+    text-decoration: none;
+    text-align: right;
+    float:right;
+}
+a:hover#retour_haut{
+    text-decoration: underline;
+}
+p{
+    padding: 2px 0;
+    margin: 0;
+}
+/* STYLE PAGE ASSOCIATION ET ERREUR*/
+#middleGalerie{
+    width:560px;
+    padding:5px;
+}
+.pageAssociation a, .pageErreur a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+.pageAssociation a:hover, .pageErreur a:hover{
+    text-decoration: underline;
+}
+
+.pageAssociation p, ul{
+    padding: 5px;
+    margin: 0;
+}
+.pageAssociation h3, h2{
+    color: #EA703F;
+    padding: 2px;
+}
+.pageAssociation h2{
+   text-align: center;
+}
+.pageAssociation h4{
+    color: #94127F;
+    padding: 2px;
+    text-indent: 3px;
+}
+/*TABLES STYLES DIVERS*/
+.table_generik{
+    border: 0;
+    width: 95%;
+}
+.table_generik tr{
+    border: 0px solid black;
+}
+.table_generik tr.ligne_1{
+    background: transparent;
+    color: black;
+}
+.table_generik tr.ligne_2{
+   background: #ADC91F;
+   color: white;
+}
+.table_generik td{
+    border: 0px solid black;
+   
+}
+.table_generik tr.titre td{
+padding: 2px;
+}
+#table_frais{
+    border: 0;
+    width: 100%;
+}
+#table_frais tr.tf_line_1{
+    color: #606171;
+    background: #ACC624;
+}
+#table_frais tr.tf_line_2{
+    color: #E85231;
+    background: white;
+}
+/*Table resultats examens*/
+#table-resultats{
+    border: 0;
+    width: 100%;
+    text-align: center;
+}
+#table-resultats tr.line_1{
+     color: #606171;
+    background: #F19601;
+}
+#table-resultats tr.line_2{
+    color: #E85231;
+    background: white;
+}
+/*-------------------------------*/
+/***********************************
+----- PAGE.TPL ET NODE.TPL ---------
+--------- RUBRIQUE BTS -------------
+-----------------------------------
+*/
+/*Table pour node annonce bts*/
+.table-poste-bts{
+    background:none;
+    border-right:1px solid #606171;
+    border-left: 1px solid #606171;
+    margin:0 auto;
+    text-align:center;
+    width:50%;
+    padding: 5px 0 10px 0;
+}
+.table-poste-bts tr.line1{
+    color: #950F7E;
+    background: white;
+}
+.table-poste-bts tr.line2{
+    background: #EFEFEF;
+    color: #E1017B;
+}
+.table-poste-bts td.etat{
+    font-weight: bold;
+}
+.table-poste-bts a{color: #E7512F;text-decoration: none;font-weight: bold;}
+.table-poste-bts a:hover{text-decoration: underline;}
+/*Vue liste des offres - style par taxonomie*/
+.liste-offres-bts-pro ul {
+    list-style: none;
+}
+.liste-offres-bts-pro ul li a{
+    text-decoration: none;
+    color: #606171;
+}
+.liste-offres-bts-pro a:hover{
+    color: #E85231;
+}
+.offre-bts-titre{/*titre dans la liste*/
+    display:block;
+    float:left;
+    font-size:14px;
+    margin:0 10px 0 0;
+    text-transform:uppercase;
+}
+.offre-bts-date{
+    margin: 0;
+    padding:3px 0 0;
+}
+.offre-bts-teaser{
+    margin: 0;
+    padding: 0;
+}
+.ref-offre{
+    float: left;
+    font-weight: bold;
+    padding: 3px 55px 0px 0;
+    margin: 0;
+}
+.etat-76{/*a pourvoir*/
+         padding: 5px;
+         margin:0 0 5px;
+    border-left:3px solid #AEC81F;
+}
+.etat-77{/*en cours*/
+         padding: 5px;
+         margin:0 0 5px;
+   border-left:3px solid #F09500;
+}
+.etat-78{/*pourvu*/
+         padding: 5px;
+         margin:0 0 5px;
+   border-left:3px solid #E0001A;
+}
+#postule{
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+#postule a{
+    color: #00AAD5;
+    text-transform: uppercase;
+}
+/*Table autres offres à pourvoir*/
+#block-views-postes_bts_alternance-block_1 h3{font-size: 14px;color: #D63E2A;text-align: center;margin: 5px;}
+.table-autre-offres {width: 95%;margin: 0 auto;}
+.table-autre-offres tbody{background: #EFEFEF;}
+.table-autre-offres tr{}
+.table-autre-offres td{}
+.table-autre-offres a{text-decoration: none;float: left;color: #94127F;padding: 3px;}
+.table-autre-offres a:hover{text-decoration: underline;}
+.table-autre-offres h4{font-size: 12px;}
+.table-autre-offres .ref-offre-autre{float: right;}
+/*style des boutons radios*/
+.bef-checkboxes,
+.bef-select-as-radios .form-radios {
+  /*
+   * Setting the height and overflow creates a scrollable <div> for the radio/checkbox elements.
+   * The border is just for looks -- adjust or remove as needed.
+   */
+  height: auto;
+  overflow: auto;
+  border: 0px solid #999;
+}
+
+/* Line up multi-line options nicely */
+.bef-group-items .form-item,
+.bef-select-as-radios .form-radios .form-item {
+  text-indent: -24px;
+  margin-left: 24px;
+  float:left;
+}
+/*style lien en savoir plus*/
+li.node_read_more a{
+color : red;
+text-decoration: none;
+text-align:left;
+}
+li.node_read_more a:hover{
+text-decoration: underline;
+}
+
+/*-------- ANNONCE DEFILANTE ------*/
+.annonce{
+    color:#00ACD1;
+    font-size:16px;
+    font-weight:bold;
+    margin:11px 0 0;
+    padding:20px 15px 0 0;
+    text-align:center;
+     background: white url(../images/fieldset_top.gif) repeat-x scroll left 11px;
+     width: 505px;
+}
+.annonce h2 a,.annonce h1 a{color: #93117E;text-decoration: none;font-size: 18px;}
+.annonce a{
+    color: #00ACD1;
+    text-decoration: none;
+    font-weight: bold;
+}
+.annonce a:hover{
+    text-decoration: underline;
+}
+.savoir-plus a{
+    color: #E2007A;
+    text-decoration: none;
+    padding: 2px;
+    float: right;
+}
+.savoir-plus a:hover{
+    background: #E2007A;
+    color: #606171;
+    text-decoration: none;
+}
+/* Défilant Actus brulante - Breaking news*/
+#block-views-annonce_accueil-block_2
+{margin: 5px auto;text-align: center;width: 375px;}
+
+#block-views-annonce_accueil-block_2 h3{
+    font-family: Arista,Trebuchet MS,sans serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align:center;
+    color: #E3001B;
+    text-decoration: blink;
+}
+.breaking-news{
+    background: #E2007A;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.breaking-news a{
+    text-align: center;
+    color: white;
+}
+.breaking-news a:hover{
+    text-decoration: none;
+}
+.breaking-news{}
+/********JWRotator*******/
+.field-field-rotator{
+margin: auto;
+padding: 2px;
+border: 1px solid #000;
+width:400px;
+}
+
+/***placement miniatures lightbox2**/
+a.lightbox-processed img {
+padding: 2px;
+margin:0;
+}
+/****------formulaire contact/////////*/
+#contact-mail-page{
+margin: auto;
+width: 550px;
+padding: 0;
+}
+
+/**----CONTENT TOP---***/
+#content-header{
+padding: 5px;
+}
+/**style du fil d'ariane**/
+.breadcrumb {
+color:#d63e2a;
+text-decoration:none;
+}
+/*#ariane{
+    display: block;
+    width: auto;
+background: white;
+}*/
+
+.breadcrumb a{
+color:#4e4d5e;
+text-decoration:none;
+background: white;
+}
+.breadcrumb a:hover{
+color:#000;
+text-decoration:underline;
+}
+/**----CONTENT BOTTOM---***/
+#content-top{}
+/************************/
+/*** TAXONOMIE *****/
+#taxonomy{
+text-align:right;
+padding: 3px;
+margin: 0px;
+color:#606171;
+}
+#taxonomy ul{
+list-style: none;
+}
+#taxonomy li{
+    list-style: none;
+    text-transform: capitalize;
+    line-height:0.3;
+    font-size:0.8em;
+}
+#taxonomy a{
+color: #d63e2a;
+text-decoration:none;
+}
+#taxonomy a:hover{
+text-decoration:underline;
+}
+/*----page login------*/
+#user-login{
+margin: auto;
+width: 450px;
+padding:10px 0;
+}
+/**----COLONNE GAUCHE---***/
+#left-content p{
+	color:#000;
+
+}
+#left-content a{
+	color:#666666;
+	text-decoration:none;
+}
+#left-content a:hover{
+	color:#990000;
+	text-decoration:underline;
+}
+#left-content li{
+	margin:0;
+	padding: 0;
+	}
+/**----COLONNE DROITE---***/
+#right-content p{
+	color:#000;
+
+}
+#right-content a{
+	color:#666666;
+	text-decoration:none;
+}
+#right-content a:hover{
+	color:#990000;
+	text-decoration:underline;
+}
+#right-content li{
+	margin:0;
+	padding: 0;
+	list-style:none;
+}
+/*STYLE PAGE LYCEE*/
+.table-formation, #table-acces{
+    width: 320px;
+    border: 0;
+    text-align:right;
+}
+.table-formation .diplome, #table-acces tr.transport{
+    text-transform: capitalize;
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px dotted gray;
+    text-align:left;
+
+}
+.transport-detail{}
+.views-field-diplome a{
+     color: gray;
+      text-decoration: none;
+}
+.views-field-diplome a:hover{
+   text-decoration: underline;
+}
+#diapo-lycee {margin:0;display: block;}
+#diapo-lycee img{border: 2px solid #E85231;padding: 1px;}
+#gmap-lycee {height: 200px;width: 300px;display: block;margin: 20px 0;}
+#gmap-lycee iframe{border: 2px solid #00AAD2;padding: 1px;}
+/*STYLE PAGE FORMATIONS INITIALES*/
+.title-formation, .title-association, .title-fiche-formation{
+    text-align: center;
+    color: #EA703F;
+}
+.title-fiche-formation, .title-association{
+    text-align: right;
+}
+.table-liste-formation, .table-revue-presse-archives{
+    width: 630px;/*largeur du tableau contenant les formations*/
+    background: none;
+    margin: 0 auto;
+    
+}
+.table-liste-formation caption,.table-formation caption,.table-revue-presse-archives caption{
+    color:black;
+    font-weight:bold;
+    text-align:left;
+    text-transform:uppercase;
+}
+.titre-categorie-diplome, .titre-categorie-revue{
+    border-bottom: 1px dotted gray;
+    color: black;
+}
+.view-liste-formation-initiales{
+    background: none;
+    width:auto;
+}
+.views-field-titre-categorie, .views-field-titre-categorie a, .views-field-titre-revue-presse, .views-field-titre-revue-presse a{
+    color: gray;
+    text-align: right;
+    text-decoration: none;
+}
+.views-field-titre-categorie a:hover, .views-field-titre-revue-presse a:hover{
+    text-decoration: underline;
+}
+.tr-table-formations, .tr-table-revue-presse{
+    background: none;
+
+}
+.views-field-table{
+    color:black;
+}
+#right-content-pageFormation a{
+    color: #E10279;
+    text-decoration: none;
+}
+#right-content-pageFormation a:hover{
+    text-decoration: underline;
+}
+#right-content-pageFormation h2{}
+#right-content-pageFormation h3{color: #94127F;margin: 2px;}
+#right-content-pageFormation h5{color: #888888;}
+span.complement {
+    color: #911381;
+    font-size: 10px;
+}
+/*STYLE FICHE FORMATION*/
+.complement_titre_fiche h3{
+    font-size: 14px;
+    color: #E1017B;
+    text-align: right;
+}
+.view-Fiche-formation-intro{
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+.view-Fiche-formation-savoir-plus{
+    vertical-align:bottom;
+    margin: 50% 0 0 0;
+    padding: 0;
+}
+.view-Fiche-formation-savoir-plus a, #lycee-coordlogo a{
+color: #d63e2a;
+text-decoration:none;
+}
+.view-Fiche-formation-savoir-plus a:hover, #lycee-coordlogo a:hover{
+text-decoration:underline;
+}
+
+span.field-content-savoir-plus{
+    color: #02A7D5;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*STYLE REVUE DE PRESSE ET ACTU ASSO */
+.table-actu-asso{
+    padding: 2px;
+}
+.table-revue-presse{
+    padding: 0;
+    margin: 0;
+    width:99%;
+}
+.table-revue-presse td, .table-actu-asso td{
+    border-bottom: 1px solid #F09500;
+    padding: 5px 0;
+}
+.table-revue-presse .views-field-title a,.table-actu-asso .views-field-title a{
+    color: #606071;
+    font-size: 14px;
+    font-weight: bold;
+}
+.table-actu-asso tr{
+     border-top: 1px solid #F09500;
+    padding: 5px 0;
+}
+.table-actu-asso .views-field-teaser a, .table-revue-presse .views-field-teaser a{
+    color: #606071;
+    text-decoration: none;
+}
+.table-actu-asso .views-field-teaser a:hover, .table-revue-presse .views-field-teaser a:hover{
+    color: #93117E;
+    text-decoration: underline;
+}
+/*Lien lire plus et archives pour les actus asso*/
+a.lire_plus{
+    text-decoration: none;
+    float:right;
+    text-align:right;
+    color: #E3001B;
+    padding: 1px;
+}
+a:hover.lire_plus{
+    background: #E3001B;
+    color: white;
+    
+}
+/*
+.lien_archive{
+	 float: right;
+	 color: #E2017B;
+	 text-decoration: underline;
+         margin: 0 10px 0 0;
+	 }
+ */
+ /*Redesign*/
+ .lien_archive {
+    background: none repeat scroll 0 0 AliceBlue;
+    color: #E2017B;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+    text-decoration: underline;
+    width: 95%;
+}
+.lien_archive a:hover{text-decoration: none;}
+.pager li.pager-current{color:#EFEFEF;padding: 2px;background: #4e4d5e; }
+/*
+== CONTENU ACTU-PRESSE Redesign ===
+*/
+.actu-presse h3{
+    color: #931B7D;
+    font-size: 14px;
+    margin:5px;
+}
+.actu-presse h4{
+    color: #01ABCF;
+    font-size: 12px;
+}
+.actu-presse img{padding: 0;}
+.actu-presse a{  color: #D63E2A;font-weight: bold;text-decoration: none;}
+.actu-presse  a:hover{text-decoration: underline;}
+.actu-minipresse{float: right;}
+.actu-minipresse img{
+    border: 2px solid #ADC91F;
+    margin: 2px;
+}
+.field-field-minipresse img{
+    float: right;
+    padding: 3px;
+    margin: 0;
+    line-height: 0;
+    -moz-box-shadow: 0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow: 0px 0px 5px #888;
+}
+/*-----------  REDESIGN ACTU GLOBALE
+---------------------------------------*/
+/*TITRES*/
+.bloc_actus h3{
+ font-family: Arista,Trebuchet MS,sans serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-align:center;
+}
+#rp_actu_gloable .bloc_actus h3{
+    color: #E2017B;
+}
+#actu_asso_actu_globale .bloc_actus h3{
+    color: #E3001B;
+}
+/*CONTENU*/
+.table_actu_globale{
+    width: 375px;
+}
+.table_actu_globale tbody{}
+.table_actu_globale tr{}
+.table_actu_globale td{
+    vertical-align: top;
+}
+.titre_actu{
+    bottom: 70px;
+    color: white;
+    left: 3px;
+    position: relative;
+    width: 190px;
+    z-index: 20;
+}
+.titre_actu a{
+    background: white;
+    color: black;
+    text-decoration: none;
+    padding: 2px;
+}
+.titre_actu a:hover{
+   background: #E85231;
+    color: black;
+    text-decoration: none;
+}
+.texte_actu{
+    display: inline-block;
+    padding: 5px 10px;
+}
+.image_actu{
+height:200px;
+position:relative;
+width:200px;
+z-index:15;
+border: 3px solid #ADC91F;
+/*left:0px;
+bottom:0px;*/
+}
+.actu-globale-grand-actuasso .image_actu{
+height:200px;
+position:relative;
+width:200px;
+z-index:15;
+border: 3px solid #E3007A;
+}
+/*LISTE ACTU GLOBALE PETITE ILLUSTRATION*/
+.table_actu_globale_petit{
+    width: 375px;
+    display: block;
+}
+.table_actu_globale_petit tbody{
+    display: block;
+}
+.table_actu_globale_petit tr{
+    display: block;
+    height: 160px;
+    margin: 5px 0;
+    padding: 0;
+}
+.table_actu_globale_petit td{
+    vertical-align: top;
+}
+.titre_actu_petit{
+    bottom: 9em;
+    color: white;
+    left: 3px;
+    position: relative;
+    width: 140px;
+    z-index: 20;
+}
+.titre_actu_petit a{
+    background: white;
+    color: black;
+
+    text-decoration: none;
+    padding: 2px;
+}
+.titre_actu_petit a:hover{
+   background: #E85231;
+    color: black;
+    text-decoration: none;
+}
+.texte_actu_petit{
+    display: inline-block;
+    padding: 5px;
+}
+.image_actu_petit{
+    border: 3px solid #ADC91F;
+    height: 150px;
+    position: relative;
+    width: 150px;
+    z-index: 15;
+}
+.actu-globale-petit-actuasso .image_actu_petit{
+border: 3px solid #E3007A;
+}
+
+.contenu-actu-globale{}
+.contenu-actu-globale a{
+     color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+.contenu-actu-globale a:hover{
+     text-decoration: underline;
+}
+.contenu-actu-globale{}
+/*BLOC FLUX RSS*/
+.block-aggregator a{
+    color: black;
+    text-decoration: none;
+}
+.block-aggregator a:hover{
+    text-decoration: underline;
+}
+#block-aggregator-category-1 h3, #block-aggregator-category-2 h3,#block-aggregator-category-3 h3,#block-aggregator-category-4 h3,#block-aggregator-category-5 h3{
+    }
+#infos_fixes_actu_globale h3.block-title{
+     font-family: Arista,Trebuchet MS,sans serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align:center;
+     color: purple;
+}
+/*NODEQUEUE ACTUS BRULANTE*/
+#block-views-nodequeue_1-block {
+    margin: 0 auto;
+    width: 210px;/*redesign : 210px - avant 240px*/
+    padding: 10px 0;
+}
+#block-views-nodequeue_1-block ul{
+    list-style: none;
+    display: block;
+    padding: 5px;
+    background: transparent url(../images/zebra-gros-clair.gif) repeat ;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 10px #00abd1;
+    -moz-box-shadow: 1px 1px 10px #00abd1;
+    box-shadow: 1px 1px 10px #00abd1;
+    behavior: url(/sites/all/libraries/PIE/PIE.htc);
+}
+
+#block-views-nodequeue_1-block li{
+    list-style: none;
+    margin: 10px 0;
+}
+#block-views-nodequeue_1-block h3.block-title{
+    color: #01ABCF;
+}
+#block-views-nodequeue_1-block a{
+    text-decoration: none;
+    background: white;
+    padding: 2px;
+    color: #606070;
+}
+#block-views-nodequeue_1-block a:hover{
+    color: white ;
+    background: #E85231;
+}
+.view-nodequeue-1 li,.view-nodequeue-1 ul li,.view-nodequeue-1 ul{
+     list-style: none;
+      margin: 10px 0;
+}
+/*BLOC BOUTONS PARTENAIRES*/
+#table-bouton-partenaire{
+    width: 210px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+#table-bouton-partenaire img{
+    border: 0;
+     
+}
+#table-bouton-partenaire a{
+    color: white;
+    font-family: Arista,Trebuchet MS,sans serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.8em;
+    height:auto;
+    padding:11px 7px;
+    width:auto;
+}
+#table-bouton-partenaire td.stage a{
+    background: url("../images/bt_proposer_stage.jpg") no-repeat top left;
+    display: block;
+    }
+#table-bouton-partenaire td.stage a:hover{
+    background: url("../images/bt_proposer_stage_hover.jpg") no-repeat top left;
+   }
+#table-bouton-partenaire td.objectif a{
+    background: url("../images/bt_objectif_reussite.jpg") no-repeat top left;
+    display: block;
+    margin: 5px 0;
+}
+#table-bouton-partenaire td.objectif a:hover{
+    background: url("../images/bt_objectif_reussite_hover.jpg") no-repeat top left;
+    }
+
+#formulaire_partenaire{
+        width: 500px;
+        margin: 0 auto;
+        padding:5px 0;
+}
+#middle-content-partenaire img{
+    padding: 10px;
+}
+#middle-content-partenaire a{
+    text-decoration: none;
+}
+.body-partenaire a{
+    color: #02A7D5;
+    
+}
+#middle-content-partenaire a:hover{
+    text-decoration: underline;
+}
+#middle-content-partenaire h2{
+   color: #94127F;
+}
+/*Contenu du QT pour afficher temoignage partenaires*/
+#centre-partenaire{}
+#centre-partenaire h3{
+    color: #E2017B;
+    margin: 5px;
+}
+#centre-partenaire img.portrait,#middle-content-partenaire img.portrait{
+    border: 2px solid #AEC81F;
+    padding: 5px;
+}
+.cartouche{
+    padding: 3px;
+    background: #EFEFEF;
+    margin: 3px 0;
+    font-size: 10px;
+    color: #606171;
+}
+#centre-partenaire{
+    
+}
+/*Contenu du QT pour afficher temoignage anciens élèves sur page association*/
+#centre-asso h2{
+    text-align: left;
+}
+#centre-asso h3{
+    color: #E2017B;
+}
+#centre-asso li.active a {
+    color: white;
+}
+#centre-asso a:hover{}
+#centre-asso img{}
+/*----- Liste partenaires associatifs vue ------*/
+#liste_part_asso{}
+#liste_part_asso ul{
+    list-style: none;
+}
+#liste_part_asso li{
+    margin: 3px 0;
+    padding: 5px;
+    background: #EFEFEF;
+}
+#liste_part_asso li a{
+    font-weight: bold;
+    text-decoration: none;
+}
+#liste_part_asso li a:hover{
+    color: white;
+    background: #E85231;
+}
+/*STYLE QUICKTABS*/
+.block-quicktabs{
+    margin: 10px 0;
+}
+
+/*SPOT RADIO*/
+label.views-label-field-spot-radio-fid{
+    color:#02A7D5;
+    font-size:13px;
+    font-weight:bold;
+}
+/*RECRUTEMENT ANNONCES*/
+.table-recrutement{
+    width: 98%;
+    border: 0;
+}
+.ligne-annonce{
+    border-bottom: 1px solid #00ABD3;
+    }
+.ligne-detail{
+   padding:10px 0;
+}
+.ligne-detail .views-field-teaser a{
+    color: #606171;
+    text-decoration: none;
+}
+.ligne-detail .views-field-teaser a:hover{
+    text-decoration: underline;
+}
+.ligne-detail label{
+    color: #E85231;
+}
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+*/
+
+/*___ STYLE GLOBAL PAGE BTS V2 ______*/
+.page-bts a{
+    text-decoration: none;
+    color: #950F7E;
+}
+.page-bts a:hover{
+    text-decoration: underline;
+}
+.page-bts p{
+    padding: 2px 0;
+}
+.page-bts h3{color: #AEC81F;text-decoration: none;font-size: 16px;}
+.page-bts h4{text-decoration: none;font-size: 14px;color: #950F7E}
+#content2-bts{}
+#content2-bts a{}
+#content2-bts a:hover{text-decoration: none;}
+.table-bts-coord{width: 97%;border: 0;}
+.table-bts-coord tbody{height: 45px;margin: 0;padding: 0;}
+.table-bts-coord tr{}
+.table-bts-coord td{vertical-align: middle;}
+.table-bts-coord{}
+/*************************************/
+/* POUR NODE.TPL PAGE BTS ACCUEIL */
+#vue-liste-bts{
+    background: url(../images/bg_nav_backoffice.gif) repeat scroll left top;
+    padding: 0;
+    margin: 10px 0;
+}
+.vue-bloc-liste-bts{text-align: left;text-indent: 15px;}
+.vue-bloc-liste-bts ul{
+    list-style: none;
+}
+.vue-bloc-liste-bts li{}
+.vue-bloc-liste-bts a{
+    font-weight: bold;
+    padding: 3px;
+    color: #911381;
+}
+#vue-liste-bts .vue-bloc-liste-bts a:hover{
+    background: #911381;
+    color: white;
+}
+#vue-liste-bts h3,#vue-liste-bts .view-header{text-align: center;}
+span#DossierBTS{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid #01ABCF;
+}
+span#DossierBTS a{
+    font-size: 14px;
+    font-weight: bold;
+}
+span#DossierBTS a:hover{}
+span#DossierBTS{}
+
+#txt-dossier-bts{}
+#txt-dossier-bts p{}
+#txt-dossier-bts{}
+#centres-bts a{
+    font-size: 12px;
+    margin: 5px 0;
+}
+#dossier-bts, #centres-bts{
+     text-align: center;
+}
+#dossier-bts .filefield-icon, #centres-bts .filefield-icon{
+     display: none;
+}
+
+#block-webform-client-block-109{}
+#block-webform-client-block-109 table{}
+#block-webform-client-block-109 tbody{}
+#block-webform-client-block-109 tr{}
+#block-webform-client-block-109 td{
+    display: block;
+}
+/*______Pour le node/111 BTS et entreprise______*/
+#docs-alternance-bts{
+    margin: 0 auto;text-align: left;width: 90%;   
+}
+#docs-alternance-bts li{
+     list-style-position: outside;
+     list-style-type: circle;
+}
+#objectif-bts table,#objectif-bts tbody{border: 0;width: 300px;margin: 0 auto;display: block;}
+
+#objectif-bts tr{
+    background: GhostWhite;
+    margin: 2px 0;
+    display: block;
+}
+#objectif-bts td,#objectif-bts tr{border: 0;}
+#objectif-bts thead{text-align: center;background: none;}
+#objectif-bts th{border: 0;font-size: 18px;color: #00AACE;padding: 3px;}
+#objectif-bts a{color: #91127D;}
+#objectif-bts a:hover{text-decoration: underline;}
+
+
+/************** NODE.TPL FICHE BTS***********************/
+#abreviation-bts{
+     color: #94127F;
+    float: right;
+    padding: 0 5px;
+    font-style: italic;
+}
+#intro-fiche-bts{
+    background:  url(../images/bg_intro_bts_bas.jpg) no-repeat scroll left bottom;
+    padding: 25px 7px;
+    width: 295px;
+    /*-moz-box-shadow: 0px 7px 8px #606171;
+    -webkit-box-shadow: 0px 7px 8px #606171;
+    box-shadow: 0px 7px 8px #606171;
+*/
+
+}
+#intro-fiche-bts h2,#middle-content-fiche-bts h2{
+    color: #ADC821;
+    font-size: 1.5em;
+    /*google font*/
+    font-family: 'Ubuntu',sans-serif;
+}
+
+#illus-fiche-bts{
+   border: 3px solid #02A7D5;
+    box-shadow: 0 0 5px #888888;
+    display: block;
+    height: 150px;
+    margin: 0 auto;
+    width: 290px;
+    
+
+}
+#complement-bts h3{color: #00AAD2;}
+#abreviation-bts{text-align: right;display: block;margin: 5px;}
+/*table infos pratiques*/
+table#infos-pratiques-bts{ 
+    border-top: 1px solid  #ACC624;
+    border-bottom: 2px solid #606171;
+    margin: 0 auto;
+    width: 99%;
+}
+table#infos-pratiques-bts tbody{
+ 
+    
+}
+table#infos-pratiques-bts tr{}
+table#infos-pratiques-bts td{
+    padding: 2px;
+    background:  #EFEFEF;
+}
+table#infos-pratiques-bts a{}
+table#infos-pratiques-bts a:hover{}
+table#infos-pratiques-bts td h4{text-align: center;color: #E10279;
+   text-shadow: 0px 0px 5px #606171;
+   filter: dropshadow(color=#606171, offx=0, offy=0);
+   font-family: 'IM Fell English', serif;
+   behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;
+}
+td.col1{
+    background: none ;
+    width: 33%;
+}
+td.col2{
+    background: #D0D1D2;
+}
+td.col3{
+    background: none ;
+}
+td:hover.col1{
+    background: blue ;
+}
+td:hover.col2{
+    background: yellow;
+}
+td:hover.col3{
+    background: #F39300;
+}
+/*Partie liens*/
+#liens-fiche-bts{}
+#liens-fiche-bts tr{}
+#liens-fiche-bts td{}
+#liens-fiche-bts{}
+
+/*Bloc infos en plus */
+#info-plus-fiche-bts{
+    background-color: #EFEFEF;
+    bottom: 0;
+    display: block;
+    margin: 5px 0;
+    padding: 3px;
+    -webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px; 
+}
+#info-plus-fiche-bts a{
+    color: #01ABCF;
+    text-decoration: none;
+}
+#info-plus-fiche-bts a:hover{
+    text-decoration: underline;
+}
+#info-plus-fiche-bts h3{
+    font-family: Arista,Trebuchet MS,sans serif;
+    color: #01ABCF;
+}
+#info-plus-fiche-bts{}
+#info-plus-fiche-bts{}
+#fiche-detaille-bts{
+    display: block;
+}
+#fiche-detaille-bts a{
+    color: #F29400;
+}
+/*bodyfield content*/
+
+#middle-content-fiche-bts h3{
+    font-size: 1.2em;
+    color: #91127D;
+}
+
+#middle-content-fiche-bts h4{
+   font-size: 14px;
+   color: #606171;
+}
+strong#middle-content-fiche-bts {
+    color: #EA703F;
+  }
+#middle-content-fiche-bts p{
+    padding:5px 0;
+  }
+#middle-content-fiche-bts a{
+    color: #d63e2a;
+    text-decoration: none;
+    font-weight: bold;
+}
+#middle-content-fiche-bts a:hover{
+    text-decoration: underline;
+}
+/*********************************
+----------------------------------
+---- RESEAUX SOCIAUX Service links
+---------------------------------*/
+.service-links, #content-bottom-home .service-links{
+    background: none repeat scroll 0 0 #EFEFEF;
+    display: block;
+    margin: 0 auto;
+    padding: 2px;
+    text-align: center;
+    width: 850px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+   /*behavior: url(/sites/all/libraries/PIE/PIE.htc);
+   position: relative;*/
+}
+.service-links a{
+    margin: 0 5px;
+    color: #F29400;
+}
+.service-links a:hover{
+    text-decoration: none;
+}
+.service-links iframe{
+    height: 20px;
+    overflow: hidden;
+    width: auto;
+}
+/*---------------------------------------*/
+/*------ PAGE PORTAIL ---------*/
+.portail-title{
+    text-align: center;
+}
+#table-portail{}
+#table-portail{
+    width :900px;
+    border:0;
+}
+#table-portail tr{}
+#table-portail td{
+    padding: 5px;
+    text-align: center;
+    color: #606070;
+    font-size: 16px;
+}
+#table-portail a{}
+#table-portail a:hover{
+
+}
+#table-portail img:hover{
+    box-shadow: 0px 0px 3px #F39300;
+}
+#table-portail img{
+    box-shadow: 0px 0px 5px #606070;
+}
+/*=
+== WEBFORM - FORMULAIRES =====
+*/
+.webform fieldset .collapsible legend {margin: 0;color: #E7512F;}
+.webform  a,.webform fieldset .collapsible legend a{color: #E7512F;}
+.webform .fieldset-wrapper {padding: 5px 0 0 25px;}
+.webform .webform-client-form {background: #EFEFEF;padding: 2px;}
+
+#protected-node-enterpassword fieldset a{color: #02A7D5;}
+
+/*********************************
+----------------------------------
+---- POLES METIERS --------------
+---------------------------------*/
+.titre-pole{color:#E85231;}
+#table-pole-inscription .views-field-title a{color: #01ABCF;text-decoration: none;padding: 5px 0;}
+#table-pole-inscription .views-field-title{}
+#table-pole-inscription .views-field-name a{color: #91127D;text-decoration: none;}
+#table-pole-inscription .views-field-name a:hover{text-decoration: underline;}
+#table-pole-inscription .views-field-title{}
+.item-pole-inscription span a{color: #91127D;text-decoration: none;}
+.item-pole-inscription span a:hover{text-decoration: underline;}
+.views-field-field-complement-info-formation-value h3{color: #E2017B;font-size:10px;text-indent: 15px;width: 100%;}
+/*Infos header vue display page*/
+h2.page-liste-metiers{margin: 5px auto; width: 100%; color: #d63e2a;}
+h3.page-liste-metiers {margin: 5px auto; width: 100%; color: #91127D;}
+.page-liste-metiers{margin: 5px auto; width: 100%;}
+/*********************************
+----------------------------------
+---- TPL NEWSLETTER CONTENT -------
+---------------------------------*/
+#illustration-newsletter{display:block;padding:2px;margin:2px;border:1px solid #F29400;background:#FFCC66;}
+#illustration-newsletter img{display: block;margin: 0 auto;}
+#docs-newsletter{border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#C2E1E8;}
+#fichiers-newsletter{border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#DDBBFF;}
+#actus_pf{border:#6633CC 1px solid;margin:2px;display:block;padding:2px;background:#DDBBFF;}
+.nl-body a{color: #E7512F;}
+
+#illustration-newsletter a,#docs-newsletter a,#actus_pf a,#fichiers-newsletter a{text-align: center;color: #4e4d5e;text-decoration: none;}
+#illustration-newsletter a:hover,#docs-newsletter a:hover,#actus_pf a:hover,#fichiers-newsletter a:hover{color: #E85231;}
+#illustration-newsletter h3,#actus_pf h3,#fichiers-newsletter h3{text-align: center;color: #94127F;}
+#docs-newsletter h3{color: #00ACD1;text-align: center;}
+/*********************************
+----------------------------------
+---- NEWSLETTER BLOC.TPL ---------
+---------------------------------*/
+#bloc-newsletter{
+     margin: 0 auto;
+    width: 250px;
+}
+#bloc-newsletter p{/*float: left;*/width: auto;}
+#bloc-newsletter form{margin: 0;}
+
+
+#bloc-newsletter .form-item label {
+    float: left;
+    margin: 0 5px;
+}
+#bloc-newsletter .form-submit input{float: right;}
+#bloc-newsletter{}
+
+#bloc-newsletter .simplenews-subscription-filter .form-item {
+  clear: both;
+  line-height: 1.75em;
+  margin: 0pt 1em 0pt 0pt;
+}
+
+#bloc-newsletter .simplenews-subscription-filter .form-item label {
+  float: left;
+  width: 12em;
+}
+
+#bloc-newsletter .simplenews-subscription-filter .spacer {
+  margin-left: 12em;
+}
+
+#bloc-newsletter .simplenews-subscription-filter .form-select,
+#bloc-newsletter .simplenews-subscription-filter .form-text {
+  width: 14em;
+}
+/* BLOC NL MULTI SOUSCRIPTION
+------------------------------*/
+.block-simplenews{
+    background: #FDE910;
+    margin: 10px auto;
+    width: 410px;
+    padding: 5px;
+     border: 5px solid #fff;
+    -moz-box-shadow: #AAAAAA 0px 0px 5px ;
+    -webkit-box-shadow: #AAAAAA 0px 0px 5px;
+    box-shadow: #AAAAAA 0px 0px 5px;
+}
+.block-simplenews h3{color: #4e4d5e;text-align: center;}
+.block-simplenews .form-item,.block-simplenews .form-submit{text-align: center;}
+.block-simplenews .form-submit{margin: 0 0 0 15px;}
+#bloc-newsletter-multi{margin: 0 auto;width: inherit;}
+#bloc-newsletter-multi p{/*float: left;*/width: auto;}
+#bloc-newsletter-multi form{margin: 0;}
+#bloc-newsletter-multi .form-item label {margin: 0 5px;}
+#bloc-newsletter-multi .form-submit input{float: right;}
+#bloc-newsletter-multi{}
+
+#bloc-newsletter-multi .simplenews-subscription-filter .form-item {clear: both;line-height: 1.75em;  margin: 0pt 1em 0pt 0pt;}
+
+#bloc-newsletter-multi .simplenews-subscription-filter .form-item label {float: left;width: 12em;}
+
+#bloc-newsletter-multi .simplenews-subscription-filter .spacer {margin-left: 12em;}
+
+#bloc-newsletter-multi .simplenews-subscription-filter .form-select,
+#bloc-newsletter-multi .simplenews-subscription-filter .form-text {width: 14em;}
+/*********************************
+----------------------------------
+---- SIMPLENEWS MAIL CONFIRMATION ---------
+---------------------------------*/
+.mail-confirmation{width: 550px;}
+.mail-confirmation a{color: #E7512F;text-decoration: none;}
+.mail-confirmation a:hover{background: #E7512F;color: #EFEFEF;}
+.mail-confirmation strong{color: #00ACD1;}
