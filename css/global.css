@@ -447,6 +447,19 @@ padding:10px 0;
 	list-style:none;
 }
 /*STYLE PAGE LYCEE*/
+
+.pageLycee h3{font-size: 14px;color:#AECA20;padding: 2px 0;}
+.pageLycee h4{font-size: 13px;color:#93117E;padding: 2px 0;}
+.pageLycee strong{color:#E85231;}
+.pageLycee a{color: #93117E;text-decoration: none;}
+.pageLycee a:hover{text-decoration: underline;}
+
+/*gmap*/
+.pageLycee small a{color : #01ABCF;text-decoration: none;}
+.pageLycee small a:hover {text-decoration: underline;}
+#tb-fiche-illus{margin:0 auto;width: 305px;padding: 5px;}
+#tb-fiche-illus img{margin: 5px;}
+
 .table-formation, #table-acces{
     width: 320px;
     border: 0;
@@ -491,6 +504,7 @@ padding:10px 0;
     font-weight:bold;
     text-align:left;
     text-transform:uppercase;
+    border-bottom: 1px dotted gray;
 }
 .titre-categorie-diplome, .titre-categorie-revue{
     border-bottom: 1px dotted gray;
@@ -515,17 +529,17 @@ padding:10px 0;
 .views-field-table{
     color:black;
 }
-#right-content-pageFormation a{
+.pageFormation a{
     color: #E10279;
     text-decoration: none;
 }
-#right-content-pageFormation a:hover{
+.pageFormation a:hover{
     text-decoration: underline;
 }
-#right-content-pageFormation h2{}
-#right-content-pageFormation h3{color: #94127F;margin: 2px;}
-#right-content-pageFormation h5{color: #888888;}
-span.complement {
+.pageFormation h2{}
+.pageFormation h3{color: #94127F;margin: 2px;}
+.pageFormation h5{color: #888888;}
+span.complement h3 {
     color: #911381;
     font-size: 10px;
 }
@@ -661,10 +675,10 @@ a:hover.lire_plus{
     margin: 10px 0;
     text-align:center;
 }
-#rp_actu_gloable .bloc_actus h3{
+.rp_actu_globale .bloc_actus h3{
     color: #E2017B;
 }
-#actu_asso_actu_globale .bloc_actus h3{
+.actu_asso_actu_globale .bloc_actus h3{
     color: #E3001B;
 }
 /*CONTENU*/
@@ -708,11 +722,10 @@ border: 3px solid #ADC91F;
 /*left:0px;
 bottom:0px;*/
 }
-.actu-globale-grand-actuasso .image_actu{
-height:200px;
-position:relative;
-width:200px;
-z-index:15;
+.rp_actu_globale .image_actu{
+border: 3px solid #ADC91F;
+}
+.actu_asso_actu_globale .image_actu{
 border: 3px solid #E3007A;
 }
 /*LISTE ACTU GLOBALE PETITE ILLUSTRATION*/
@@ -756,27 +769,28 @@ border: 3px solid #E3007A;
     display: inline-block;
     padding: 5px;
 }
+/*Style images mini*/
 .image_actu_petit{
-    border: 3px solid #ADC91F;
     height: 150px;
     position: relative;
     width: 150px;
     z-index: 15;
 }
-.actu-globale-petit-actuasso .image_actu_petit{
+.rp_actu_globale .image_actu_petit{border: 3px solid #ADC91F;}
+.actu_asso_actu_globale .image_actu_petit{
 border: 3px solid #E3007A;
 }
 
-.contenu-actu-globale{}
-.contenu-actu-globale a{
+.pageActu{}
+.pageActu a{
      color: #d63e2a;
     text-decoration: none;
     font-weight: bold;
 }
-.contenu-actu-globale a:hover{
+.pageActu a:hover{
      text-decoration: underline;
 }
-.contenu-actu-globale{}
+.pageActu{}
 /*BLOC FLUX RSS*/
 .block-aggregator a{
     color: black;
@@ -787,7 +801,7 @@ border: 3px solid #E3007A;
 }
 #block-aggregator-category-1 h3, #block-aggregator-category-2 h3,#block-aggregator-category-3 h3,#block-aggregator-category-4 h3,#block-aggregator-category-5 h3{
     }
-#infos_fixes_actu_globale h3.block-title{
+.infos_fixes_actu_globale h2.block-title{
      font-family: Arista,Trebuchet MS,sans serif;
     font-size: 18px;
     font-weight: bold;
@@ -878,20 +892,18 @@ border: 3px solid #E3007A;
         margin: 0 auto;
         padding:5px 0;
 }
-#middle-content-partenaire img{
+.pagePartenaires img{
     padding: 10px;
 }
-#middle-content-partenaire a{
-    text-decoration: none;
-}
+.pagePartenaires a{text-decoration: none;color: #02A7D5;}
 .body-partenaire a{
     color: #02A7D5;
     
 }
-#middle-content-partenaire a:hover{
+.pagePartenaires a:hover{
     text-decoration: underline;
 }
-#middle-content-partenaire h2{
+.pagePartenaires h2{
    color: #94127F;
 }
 /*Contenu du QT pour afficher temoignage partenaires*/
@@ -900,7 +912,7 @@ border: 3px solid #E3007A;
     color: #E2017B;
     margin: 5px;
 }
-#centre-partenaire img.portrait,#middle-content-partenaire img.portrait{
+#centre-partenaire img.portrait,.pagePartenaires img.portrait{
     border: 2px solid #AEC81F;
     padding: 5px;
 }
@@ -1221,6 +1233,28 @@ strong#middle-content-fiche-bts {
     font-weight: bold;
 }
 #middle-content-fiche-bts a:hover{
+    text-decoration: underline;
+}
+/*======================================
+=====  PAGE BOURSES =====*/
+a.telechargement1{
+    color: #911381;
+    text-decoration: none;
+}
+a:hover.telechargement1{
+    text-decoration: underline;
+}
+
+.pageBourses h3{
+    color: #AEC81F;
+    text-decoration: none;
+    font-size: 16px;
+}
+.pageBourses a{
+    text-decoration: none;
+    color: #E2017B;
+}
+.pageBourses a:hover{
     text-decoration: underline;
 }
 /*********************************

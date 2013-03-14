@@ -217,7 +217,7 @@ h6 {
 ********** LAYOUT NODE.TPL OVERRIDE **********
 \\\\\\\\\\\\\\\\\\\\\\\//////////////////////*/
 /*//////////////// COLONNE 1 \\\\\\\\\\\\\\\\*/
-#colonne-1{padding: 5px;float: left;}
+#colonne-1{padding: 3px;float: left;}
 
 .col1_layout_200_570_200{width: 200px;}/*formulaire*/
 .col1_layout_330_all{}
@@ -231,13 +231,13 @@ h6 {
 .col1_layout_305_650{width: 305px;}/*fiche formation*/
 .col1_layout_175_490_270{width: 175px}/*detail offre ctPro*/
 .col1_layout_325_620{width: 325px;}/*page bourses*/
-.col1_layout_375_375_220{width: 375px;}/*page actu globale*/
-
+.col1_layout_375_375_220{width: 370px;}/*page actu globale*/
+.col1_layout_645_314{width: 645px;}/*page formation*/
 
 
 
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
-#colonne-2, #middle-content-override{padding: 5px;float: left;}
+#colonne-2, #middle-content-override{padding: 3px;float: left;}
 
 .col2_layout_200_570_200{width: 570px !important;width: 560px;}/*formulaire*/
 .col2_layout_330_all{}
@@ -247,24 +247,23 @@ h6 {
 .col2_layout_305_660{width: 660px;}
 .col2_layout_340_305_300{width:305px !important;width: 275px;}/*page lycee*/
 .col2_layout_210_515_220{width: 515px;}/*page partenaire*/
-.col2_layout_645_314{width: 645px;}/*page formation*/
+.col2_layout_645_314{width: 314px;}/*page formation*/
 .col2_layout_185_560_200{width: 560px;}/*page asso,page erreur*/
 .col2_layout_305_650{width: 650px;}/*fiche formation*/
 .col2_layout_550_405{width: 549px;}/*page BTS,page recrutement*/
 .col2_layout_175_490_270{width: 490px}/*detail offre ctPro*/
 .col2_layout_325_620{width: 620px;}/*page bourses*/
 .col2_layout_550_405{width: 550px;}/*page BTS entreprise*/
-.col2_layout_375_375_220{width: 375px;}/*page actu globale*/
+.col2_layout_375_375_220{width: 370px;}/*page actu globale*/
 
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
-#colonne-3{float: right;padding: 5px;}
+#colonne-3{float: right;padding: 3px;}
 
 .col3_layout_200_570_200{width: 200px;}/*formulaire*/
 .col3_layout_330_all{}
 .col3_layout_18_56_25{}
 .col3_layout_340_305_300{width:300px !important;width: 290px;}/*page lycee*/
 .col3_layout_210_515_220{width: 220px;}/*page partenaire*/
-.col3_layout_645_314{width: 314px;}/*page formation*/
 .col3_layout_185_560_200{width: 200px;}/*page asso,page erreur*/
 .col3_layout_550_405{width: 405px !important;width: 400px}/*page BTS,page recrutement*/
 .col3_layout_175_490_270{width: 270px}/*detail offre ctPro*/

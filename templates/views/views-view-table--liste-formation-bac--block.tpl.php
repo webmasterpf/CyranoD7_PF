@@ -15,6 +15,7 @@
  * @ingroup views_templates
  */
 ?>
+<!--______________ VIEWS CUSTOM TPL ________________ -->
 <table class="table-liste-formation">
   <?php if (!empty($title)) : ?>
     <caption><?php print $title; ?></caption>

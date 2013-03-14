@@ -22,7 +22,7 @@ Drupal.behaviors.goTop = function(context) {
     //$.scrollTo(400); // Et on va en haut de page.
     $('html,body').animate({scrollTop:0},'slow');
   });
-}
+
 //Pour avoir un scroll smooth. http://www.learningjquery.com/2007/08/animated-scrolling-for-same-page-links
  $(document).ready(function() {
  $('a[href*=#]').click(function() {
@@ -37,3 +37,4 @@ Drupal.behaviors.goTop = function(context) {
         };
     });
 });
+}

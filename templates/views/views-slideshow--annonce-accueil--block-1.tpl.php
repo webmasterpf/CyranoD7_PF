@@ -17,7 +17,7 @@
  * @ingroup views_templates
  */
 ?>
-<!-- Tpl vue Annonce accueil - block_1 -->
+<!--______________ VIEWS CUSTOM TPL ________________ -->
 <div class="skin-<?php print $skin; ?>">
   <?php if (!empty($top_widget_rendered)): ?>
     <div class="views-slideshow-controls-top clearfix">

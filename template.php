@@ -208,3 +208,26 @@ function cyranod7_pf_menu_local_tasks(&$variables) {
       drupal_add_css($theme_path . '/css/ie.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'lte IE 7', '!IE' => FALSE), 'preprocess' => FALSE));
       $vars['head_title'] = implode(' | ', array(drupal_get_title(), variable_get('site_name'), variable_get('site_slogan')));  
     }
+
+
+/*_______________FONCTIONS POUR ACTION SUR AGGREGATOR____________*/
+/* modify link items in the aggregator to open in a new window and
+suppress the "blog it" icon & links should the module ever be enabled.
+(Code removed--not commented out--from this copy of the original function.)
+ * drupal.org/node/573054 */
+function Cyranod7_PF_aggregator_block_item($variables) {
+  $link = check_url($variables['item']->link);
+  $title = check_plain($variables['item']->title);
+
+  // I prefer sprintf to string concatenation.
+  return sprintf('<a target="feed-news" href="%s">%s</a>',
+                 $link,
+                 $title);
+}
+/**Enleve le lien en savoir plus - NE PAS OUBLIER DE CHANGER LE NOM DU THEME !!!___*/
+function CyranoD7_PF_more_link ($url, $title) {
+  if (stristr( $url, 'aggregator')) {
+    return "";
+  }
+}
+    
