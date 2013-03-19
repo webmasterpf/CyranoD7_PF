@@ -233,7 +233,7 @@ h6 {
 .col1_layout_325_620{width: 325px;}/*page bourses*/
 .col1_layout_375_375_220{width: 370px;}/*page actu globale*/
 .col1_layout_645_314{width: 645px;}/*page formation*/
-
+.col1_layout_550_405{width: 550px;}/*page BTS entreprise*/
 
 
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
@@ -253,7 +253,7 @@ h6 {
 .col2_layout_550_405{width: 549px;}/*page BTS,page recrutement*/
 .col2_layout_175_490_270{width: 490px}/*detail offre ctPro*/
 .col2_layout_325_620{width: 620px;}/*page bourses*/
-.col2_layout_550_405{width: 550px;}/*page BTS entreprise*/
+.col2_layout_550_405{width: 405px;}/*page BTS entreprise*/
 .col2_layout_375_375_220{width: 370px;}/*page actu globale*/
 
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
@@ -267,13 +267,13 @@ h6 {
 .col3_layout_185_560_200{width: 200px;}/*page asso,page erreur*/
 .col3_layout_550_405{width: 405px !important;width: 400px}/*page BTS,page recrutement*/
 .col3_layout_175_490_270{width: 270px}/*detail offre ctPro*/
-.col3_layout_550_405{width: 405px;}/*page BTS entreprise*/
 .col3_layout_375_375_220{width: 220px;}/*page actu globale*/
 
 #colonne-unik{padding: 3px;width: 990px;}
 /*//////////////// BORDER COLONNE 1 \\\\\\\\\\\\\\\\*/
 .border-R-orangePF{border-right: 1px solid #DA5714;}
 .border-R-anthracite{border-left: 1px solid #606171;}
+.border-R-vert{border-right: 1px solid #ADC91F;}
 /*//////////////// BORDER COLONNE 2 \\\\\\\\\\\\\\\\*/
 .border-rouge-bleu{ border-left: 1px solid #E2001A; border-right: 1px solid #00AAD2;}
 .border-rose-bleu { border-left: 1px solid #E2007A; border-right: 1px solid #00AAD2;}

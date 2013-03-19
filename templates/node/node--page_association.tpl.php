@@ -66,20 +66,7 @@ include ($theme_path.'/includes/inc_region_col_C2.php');
 
         <!--______________COLONNE 3________________ -->
         <div id="colonne-3" class="col3_layout_185_560_200 pageAssociation">
-            <!--***********!!!!!!  EXEMPLE DE CHAMP CCK INCLUS AVEC CONDITION !!!!!!!!************ -->
-            <?php if (!empty($content['field_fichier_joint'])): ?>
-     <div class="CLASSE_DIV">
-<?php
-print render($content['field_fichier_joint']);
-?>
-         </div>
-<?php endif; ?>
-
-
-  <?php //inclusion d'une vue via php
-$theme_path = drupal_get_path('theme', 'NOM_THEME');
-include ($theme_path.'/includes/inc_vue_generik_tpl.php');
-?>
+           
 
             <?php //region colonne C3
 $theme_path = drupal_get_path('theme', 'cyranod7_pf');

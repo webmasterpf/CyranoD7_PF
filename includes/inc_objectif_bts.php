@@ -6,15 +6,12 @@
  */
 ?>
 <?php
-
-foreach($node->field_objectif_bts as $file) {
-  if ($file['view']) {
-      $header = array('data' => 'Les objectifs des formations BTS');
-      $rows[] = array($file['view']);
-      $attributes = array('id'=> 'objectif-bts','sticky' => FALSE);
+$rows = array();
+foreach($node->field_fichier_joint_rp as $file) {
+  if ($file['und']['0']['value']) {
+      $rows[] = array($file['view']['0']['value']);
     }
 }
-
-$output = theme('table', $header,$rows, $attributes);
+$output = theme('table', array('rows' => $rows, 'attributes' => array('class' => 'table-fichier_joint_rp')));
 print $output;
 ?>
