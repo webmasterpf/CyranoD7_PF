@@ -72,8 +72,10 @@ print render($content['field_fichier_joint']);
 /* inclusion des termes de taxonomie associés
  * Nouveau dans  D7 - choisir si affiche nom du vocabulaire ou pas selon le VID
  */
-print render($content['taxonomy_vocabulary_1']);
-
+print render($content['taxonomy_vocabulary_1']);/*Nom vocab + terme avec lien*/
+/*il faut régler dans les param du champ l'affichage de la taxo*/
+print $node->taxonomy_vocabulary_8['und'][0]['taxonomy_term']->name;
+/*permet d'afficher le terme seul*/
 ?>
 
   <?php //inclusion d'une vue via php
@@ -81,11 +83,7 @@ $theme_path = drupal_get_path('theme', 'NOM_THEME');
 include ($theme_path.'/includes/inc_vue_generik_tpl.php');
 ?>
 
-            <?php //region colonne C3
-$theme_path = drupal_get_path('theme', 'NOM_THEME');
-include ($theme_path.'/includes/inc_region_col_C3.php');
-?>
-            
+                      
             <?php //Pour inclure une region custom dans un node,pas besoin de template.php
             if (block_get_blocks_by_region('region_name')): ?>
                 <div class="ma_classe_region">
@@ -93,6 +91,10 @@ include ($theme_path.'/includes/inc_region_col_C3.php');
                 </div>
             <?php endif; ?>
 
+             <?php //region colonne C3
+$theme_path = drupal_get_path('theme', 'NOM_THEME');
+include ($theme_path.'/includes/inc_region_col_C3.php');
+?>
             </div><!--_/C3_ -->
 
       <?php if (!empty($content['links']['terms'])): ?>
