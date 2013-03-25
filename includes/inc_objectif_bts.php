@@ -8,8 +8,8 @@
 <?php
 $rows = array();
 foreach($node->field_fichier_joint_rp as $file) {
-  if ($file['und']['0']['value']) {
-      $rows[] = array($file['view']['0']['value']);
+  if ($file['filename']) {
+      $rows[] = array($file['filename']);
     }
 }
 $output = theme('table', array('rows' => $rows, 'attributes' => array('class' => 'table-fichier_joint_rp')));

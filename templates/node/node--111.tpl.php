@@ -29,30 +29,17 @@
        ?>
            
 
-         <?php
-       if ($node->field_docs_bts_alternance[0]['view']
-        OR $node->field_docs_bts_alternance[1]['view']
-        OR $node->field_docs_bts_alternance[2]['view']
-        OR $node->field_docs_bts_alternance[3]['view']
-        ): ?>
-        <ul id="docs-alternance-bts">
-           <?php if ($node->field_docs_bts_alternance[0]['view']): ?>
-              <li>      <?php  print $node->field_docs_bts_alternance[0]['view'] ?></li>
-              <?php endif; ?>
-              <?php if ($node->field_docs_bts_alternance[1]['view']): ?>
-              <li>      <?php  print $node->field_docs_bts_alternance[1]['view'] ?></li>
-              <?php endif; ?>
-                 <?php if ($node->field_docs_bts_alternance[2]['view']): ?>
-              <li>      <?php  print $node->field_docs_bts_alternance[2]['view'] ?></li>
-              <?php endif; ?>
-              <?php if ($node->field_docs_bts_alternance[3]['view']): ?>
-              <li>      <?php  print $node->field_docs_bts_alternance[3]['view'] ?></li>
-              <?php endif; ?>
-        </ul>
-   <?php endif; ?>
-
-        <br clear="all"/>
+         <?php/*
+          * Le code PHP est remplacé par une vue de type bloc
+          * insérée via l'UI avec une restriction d'affichage 
+          * sur le node/111
+          */
+        ?>
        
+        <?php
+ $theme_path = drupal_get_path('theme', 'cyranod7_pf');
+ include ($theme_path.'/includes/inc_region_col_C1.php');
+ ?>  
     </div>
 
       <?php if (!empty($content['links']['terms'])): ?>
@@ -62,10 +49,7 @@
     <?php if (!empty($content['links'])): ?>
 	    <div class="links"><?php print render($content['links']); ?></div>
 	  <?php endif; ?>
-     <?php
- $theme_path = drupal_get_path('theme', 'cyranod7_pf');
- include ($theme_path.'/includes/inc_region_col_C1.php');
- ?>   
+     
       
        <!-- retour haut selon resolution de l'ecran -->
           <a href="#general" id="retour_haut">Haut de page</a>

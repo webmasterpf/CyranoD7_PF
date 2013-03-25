@@ -20,7 +20,7 @@
               ?>
         </div><!--_/C1_ -->
           <!--______________COLONNE 2________________ -->
-         <!-- <pre> <?php //print_r($node); ?> </pre>-->   <!-- listage des variables du $content -->
+     
         <div id="colonne-2" class="col2_layout_175_490_270 border-noir-vert">
    <?php if (!$page): ?>
       <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
@@ -37,35 +37,46 @@
 
        <table class="table-poste-bts">
            <tr class="line1">
-               <td>  <?php  print $node->content['field_reference_pbts']['field']['#title']  ?></td>
-               <td>  <?php  print render($content['field_reference_pbts']);?></td>
+               <td>  
+                <?php $info = field_info_instance('node','field_reference_pbts','poste_bts_alternance');
+                print $info['label'];?>
+               </td>
+               <td>   <?php  $field = field_get_items('node', $node, 'field_reference_pbts');
+                print $field[0]['safe_value'];?></td>
 
            </tr>
               <tr class="line2">
-               <td>  <?php print $node->taxonomy_vocabulary_8['und'][0]['taxonomy_term']->vocabulary_name;?></td>
-               <td>  <?php  print render($content['field_lieu_poste_bts']);?></td>
+               <td> 
+ <?php  $info = field_info_instance('node','field_lieu_poste_bts','poste_bts_alternance');
+  print $info['label'];?>
+ </td>
+               <td>  <?php  $field = field_get_items('node', $node, 'field_lieu_poste_bts');
+                print $field[0]['value'];?></td>
                
            </tr>
               <tr class="line1">
                  
-                  <td> BTS associ&eacute;</td>
+                  <td> BTS associ&eacute; </td>
                <td><?php print $node->taxonomy_vocabulary_8['und'][0]['taxonomy_term']->name;?></td>
-               
-               
-           </tr>
+             </tr>
               <tr class="line2">
-               <td>  <?php  print $node->content['field_domaine_activite_bts']['field']['#title'] ?></td>
-               <td>  <?php  print render($content['field_domaine_activite_bts']);?></td>
+               <td> 
+            <?php $info = field_info_instance('node','field_domaine_activite_bts','poste_bts_alternance');
+                print $info['label'];?></td>
+               <td> <?php
+                $field = field_get_items('node', $node, 'field_domaine_activite_bts');
+                print $field[0]['value'];
+                   ?></td>
                
            </tr>
              <tr class="line1">
-               <td>  Etat du recrutement</td>
+               <td>Etat du recrutement</td>
                <td class="etat"><?php print $node->taxonomy_vocabulary_7['und'][0]['taxonomy_term']->name;?></td>
 
            </tr>
             <tr class="line2">
                <td> Postuler à l'offre</td>
-               <td> <?php print '<a href=/node/184?destinataire='.$node->field_centre_bts['und'][0]['value'].
+               <td> <?php print '<a href=/node/184?destinataire='.$node->field_centre_bts['und'][0]['tid'].
                     '&ref_offre='.$node->field_reference_pbts['und'][0]['value'].'>ICI</a>';?></td>
 
            </tr>
@@ -73,6 +84,7 @@
        </table>
 <!--______________ CONTENU ________________ -->
             <div class="content">
+<!-- <?php print_r($node); ?> -->                
                 <?php 
   	    // We hide the comments and links now so that we can render them later.
         hide($content['comments']);
@@ -101,6 +113,11 @@ include ($theme_path.'/includes/inc_region_col_C3.php');
     <?php if (!empty($content['links'])): ?>
 	    <div class="links"><?php print render($content['links']); ?></div>
 	  <?php endif; ?>
-
+            
+    <?php //debug
+$theme_path = drupal_get_path('theme', 'cyranod7_pf');
+include ($theme_path.'/includes/inc_debug_theme.php');
+?>
+            
   </div> <!-- /node-inner -->
 </div> <!-- /node-->

@@ -224,7 +224,7 @@ h6 {
 .col1_layout_18_56_25{}
 .col1_layout_225_720{width: 225px;}/*liste CT pro*/
 .col1_layout_250_700{width: 250px;}
-.col1_layout_305_660{width: 305px;}
+.col1_layout_305_660{width: 305px;}/*simplenews*/
 .col1_layout_340_305_300{width: 340px;}/*page lycee*/
 .col1_layout_210_515_220{width: 210px;}/*page partenaire*/
 .col1_layout_185_560_200{width: 185px;}/*page asso,page erreur*/
@@ -234,6 +234,7 @@ h6 {
 .col1_layout_375_375_220{width: 370px;}/*page actu globale*/
 .col1_layout_645_314{width: 645px;}/*page formation*/
 .col1_layout_550_405{width: 550px;}/*page BTS entreprise*/
+.col1_layout_315_650{width: 315px;}/*fiche formation BTS*/
 
 
 /*//////////////// COLONNE 2 \\\\\\\\\\\\\\\\*/
@@ -244,7 +245,7 @@ h6 {
 .col2_layout_18_56_25{}
 .col2_layout_225_720{width: 720px;}/*liste CT pro*/
 .col2_layout_250_700{width: 700px;}
-.col2_layout_305_660{width: 660px;}
+.col2_layout_305_660{width: 660px;}/*simplenews*/
 .col2_layout_340_305_300{width:305px !important;width: 275px;}/*page lycee*/
 .col2_layout_210_515_220{width: 515px;}/*page partenaire*/
 .col2_layout_645_314{width: 314px;}/*page formation*/
@@ -255,6 +256,7 @@ h6 {
 .col2_layout_325_620{width: 620px;}/*page bourses*/
 .col2_layout_550_405{width: 405px;}/*page BTS entreprise*/
 .col2_layout_375_375_220{width: 370px;}/*page actu globale*/
+.col2_layout_315_650{width: 650px;}/*fiche formation BTS*/
 
 /*//////////////// COLONNE 3 \\\\\\\\\\\\\\\\*/
 #colonne-3{float: right;padding: 3px;}

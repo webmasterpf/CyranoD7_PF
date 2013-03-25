@@ -249,6 +249,7 @@ padding: 2px;
 .table-autre-offres h4{font-size: 12px;}
 .table-autre-offres .ref-offre-autre{float: right;}
 /*style des boutons radios*/
+.form-type-radio,
 .bef-checkboxes,
 .bef-select-as-radios .form-radios {
   /*
@@ -261,9 +262,10 @@ padding: 2px;
 }
 
 /* Line up multi-line options nicely */
-.bef-group-items .form-item,
-.bef-select-as-radios .form-radios .form-item {
-  text-indent: -24px;
+.offreCtPro.views-exposed-widget{width: auto;}
+.form-radio{float: left;margin: 0;}
+.form-type-radio label,.form-type-radio
+{
   margin-left: 24px;
   float:left;
 }
@@ -446,6 +448,13 @@ padding:10px 0;
 	padding: 0;
 	list-style:none;
 }
+/*================================================
+===== STYLE LAYOUT GLOBAL ELEMENTS ===============*/
+#colonne-1{}
+#colonne-2{}
+#colonne-3{}
+#colonne-1 .item-list ul li,#colonne-2 .item-list ul li,#colonne-3.item-list ul li
+{list-style: none;}
 /*STYLE PAGE LYCEE*/
 
 .pageLycee h3{font-size: 14px;color:#AECA20;padding: 2px 0;}
@@ -1121,7 +1130,33 @@ span#DossierBTS{}
 #objectif-bts a:hover{text-decoration: underline;}
 
 
+/*--------------------------------------------
+~~~~~~~~~~ RUBRIQUE BTS REFONTE ~~~~~~~~~~~~~~
+¤¤¤¤¤¤¤¤  PAGE.TPL ET NODE.TPL ¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤
+¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤¤*/
+
 /************** NODE.TPL FICHE BTS***********************/
+/*SPLIT BODY FIELD CONTENT FICHE BTS*/
+.column_1{
+    float: left;
+    width: 320px;
+    padding: 1px;
+}
+.column_2{
+     background: none repeat scroll 0 0 transparent;
+    border-left: 1px dotted;
+    float: left;
+    padding: 3px;
+    width: 320px;
+}
+
+.ficheBts{
+ padding: 5px;
+}
+.ficheBts h3{font-size: 1.2em;color: #91127D;}
+.ficheBts a{color: #D63E2A;text-decoration: none;}
+.ficheBts a:hover{text-decoration: underline;}
+.bodyfield-content-bts{float: left;margin: 5px;}
 #abreviation-bts{
      color: #94127F;
     float: right;
@@ -1130,7 +1165,7 @@ span#DossierBTS{}
 }
 #intro-fiche-bts{
     background:  url(../images/bg_intro_bts_bas.jpg) no-repeat scroll left bottom;
-    padding: 25px 7px;
+    padding: 40px 7px;
     width: 295px;
     /*-moz-box-shadow: 0px 7px 8px #606171;
     -webkit-box-shadow: 0px 7px 8px #606171;
@@ -1149,9 +1184,9 @@ span#DossierBTS{}
    border: 3px solid #02A7D5;
     box-shadow: 0 0 5px #888888;
     display: block;
-    height: 150px;
-    margin: 0 auto;
-    width: 290px;
+     margin: 0 auto;
+/*    height: 150px;   
+    width: 290px;*/
     
 
 }
